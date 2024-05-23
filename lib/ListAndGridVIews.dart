@@ -40,23 +40,59 @@ class listGrid extends StatelessWidget {
         //       ),
         //     );
         //   },
-       child: ListView.builder(
-         itemCount:fruits.length ,
-         itemBuilder:(context,index){
-          return Card(
-            child: ListTile(
-              leading: Icon(Icons.person),
-              onTap: (){
-                print('${(mp['man']![index])} has eaten th frutis');
-              },
-              title: Text(
-                  mp['fruits']![index],
-              ),
-              subtitle: Text(mp['man']![index]),
-            ),
-          );
-         } ,
-       ),
+       // child: ListView.builder(
+       //   itemCount:fruits.length ,
+       //   itemBuilder:(context,index){
+       //    return Card(
+       //      child: ListTile(
+       //        leading: Icon(Icons.person),
+       //        onTap: (){
+       //          print('${(mp['man']![index])} has eaten th frutis');
+       //        },
+       //        title: Text(
+       //            mp['fruits']![index],
+       //        ),
+       //        subtitle: Text(mp['man']![index]),
+       //      ),
+       //    );
+       //   } ,
+       // ),
+       //  child: GridView(
+        //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+        //   mainAxisSpacing: 10,
+        //   crossAxisSpacing: 10),
+        //   children: [
+        //     Card(
+        //       color: Colors.pink.shade400,
+        //       child: ListTile(
+        //         title: Text('orange'),
+        //         subtitle: Text('samad'),
+        //       ),
+        //     ),
+        //     Card(
+        //       child: ListTile(
+        //         title: Text('orange'),
+        //         subtitle: Text('samad'),
+        //       ),
+        //     ),
+        //     Card(
+        //       child: ListTile(
+        //         title: Text('orange'),
+        //         subtitle: Text('samad'),
+        //       ),
+        //     ),
+        //   ],
+        // ),
+        child: GridView.builder(
+          itemCount: fruits.length,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            itemBuilder: (context,index){
+              return Card(
+                color: Colors.green,
+                child: Center(child: Text(fruits[index])),
+              );
+            }
+        ),
       ),
     );
   }
