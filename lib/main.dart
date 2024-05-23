@@ -3,6 +3,7 @@ import 'package:leancode/rowcols.dart';
 import 'ListAndGridVIews.dart';
 import 'buttions.dart';
 import 'container_box.dart';
+import 'package:leancode/snackBar.dart';
 
 void main() => runApp(myapp());
 
@@ -16,7 +17,7 @@ class myapp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.green
       ),
-      home: listGrid(),
+      home: snackbarwidget(),
     );
   }
 }
