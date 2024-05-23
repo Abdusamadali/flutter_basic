@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:leancode/rowcols.dart';
+import 'ListAndGridVIews.dart';
 import 'buttions.dart';
 import 'container_box.dart';
 
@@ -12,7 +13,10 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: buttions(),
+      theme: ThemeData(
+        primaryColor: Colors.green
+      ),
+      home: listGrid(),
     );
   }
 }

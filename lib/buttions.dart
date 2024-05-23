@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ListAndGridVIews.dart';
+
 class buttions extends StatelessWidget {
   const buttions({super.key});
 
@@ -21,7 +23,9 @@ class buttions extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: (){},
+              onPressed: (){
+                listGrid();
+              },
               child: Text(
                   'click me',
                 style: TextStyle(
@@ -75,7 +79,7 @@ class buttions extends StatelessWidget {
             ),
             SizedBox(height: 20,),
             TextButton(onPressed: (){
-              print('buttion has been clicked ');
+                  home:listGrid();
             },
                 child: Text(
                     'click here ',
