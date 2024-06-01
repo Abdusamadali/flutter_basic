@@ -4,3 +4,4 @@ export 'drawer.dart';
 export 'package:leancode/dismissable.dart';
 export 'package:leancode/bottomSheetWiget.dart';
 export 'animatedText.dart';
+export 'package:leancode/BottomNavigation.dart';
