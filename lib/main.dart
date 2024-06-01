@@ -25,7 +25,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: alert_dialog(),
+      home: bottomsheetwidget(),
     );
   }
 }
