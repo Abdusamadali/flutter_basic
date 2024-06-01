@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:leancode/rowcols.dart';
-import 'ListAndGridVIews.dart';
-import 'buttions.dart';
-import 'container_box.dart';
-import 'package:leancode/snackBar.dart';
+import 'allPackage.dart';
 
+// void main() => runApp(myapp());
+//
+// class myapp extends StatelessWidget {
+//   const myapp({super.key});
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         primaryColor: Colors.green
+//       ),
+//       home: drawer(),
+//     );
+//   }
+// }
 void main() => runApp(myapp());
 
 class myapp extends StatelessWidget {
@@ -12,12 +23,9 @@ class myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.green
-      ),
-      home: snackbarwidget(),
+      home: alert_dialog(),
     );
   }
 }
