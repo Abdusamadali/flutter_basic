@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'allPackage.dart';
 
 class navigation extends StatefulWidget {
   const navigation({super.key});
@@ -10,24 +10,31 @@ class navigation extends StatefulWidget {
 
 class _navigationState extends State<navigation> {
   int selectedIndex=0;
-  List<Widget>widgets=[
-    Text('home',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40),),
-    Text('search',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40)),
-    Text('Add',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40)),
-    Text('profile',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40))
-  ];
-
+  // List<Widget>widgets=[
+  //   Text('home',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40),),
+  //   Text('search',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40)),
+  //   Text('Add',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40)),
+  //   Text('profile',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40))
+  // ];
+  PageController pageController=PageController();
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: Text('Bottom Navigation '),
-      ),
-      body: Center(
-          child: widgets[selectedIndex]
+      // appBar: AppBar(
+      //   backgroundColor: Colors.green,
+      //   title: Text('Bottom Navigation '),
+      // ),
+      body: PageView(
+        controller: pageController,
+        children: [
+          drawer(),
+          snackbarwidget(),
+          animated(),
+          dismissable()
+        ],
+
       ),
       bottomNavigationBar:BottomNavigationBar(
 
@@ -56,6 +63,7 @@ class _navigationState extends State<navigation> {
         onTap: (index){
           setState(() {
             selectedIndex=index;
+            pageController.jumpToPage(selectedIndex);
           });
         },
       )
