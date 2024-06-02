@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leancode/SomeMethod.dart';
 import 'allPackage.dart';
 
 // void main() => runApp(myapp());
@@ -25,7 +26,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: navigation(),
+      home: formWidget(),
     );
   }
 }
