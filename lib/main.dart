@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:leancode/SomeMethod.dart';
+import 'package:leancode/rowcols.dart';
 import 'allPackage.dart';
 
 // void main() => runApp(myapp());
@@ -26,7 +27,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: formWidget(),
+      home: decorationImageWidget(),
     );
   }
 }

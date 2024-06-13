@@ -7,3 +7,4 @@ export 'animatedText.dart';
 export 'package:leancode/BottomNavigation.dart';
 export 'package:leancode/dropdown.dart';
 export 'formWidget.dart';
+export 'decorationImage.dart';
