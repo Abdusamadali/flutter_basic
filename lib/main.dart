@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:leancode/SomeMethod.dart';
+import 'package:leancode/TabBar.dart';
 import 'package:leancode/rowcols.dart';
+import 'package:leancode/stackWIdget.dart';
 import 'allPackage.dart';
 
 // void main() => runApp(myapp());
@@ -27,7 +29,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: decorationImageWidget(),
+      home: tabBar(),
     );
   }
 }
