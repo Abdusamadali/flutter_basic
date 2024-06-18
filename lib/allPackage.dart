@@ -8,3 +8,4 @@ export 'package:leancode/BottomNavigation.dart';
 export 'package:leancode/dropdown.dart';
 export 'formWidget.dart';
 export 'decorationImage.dart';
+export 'package:leancode/geolocator.dart';
