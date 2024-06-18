@@ -27,7 +27,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: instaui(),
+      home: navbar(),
     );
   }
 }

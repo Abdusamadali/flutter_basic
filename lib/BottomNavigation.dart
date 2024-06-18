@@ -41,19 +41,23 @@ class _navigationState extends State<navigation> {
         items:
           const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home,color: Colors.pink,),
             label:'home'
           ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.search),
+                icon: Icon(Icons.search,color: Colors.pink,),
                 label:'search'
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add),
+                icon: Icon(Icons.add,color: Colors.pink,),
                 label:'Add'
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person),
+                icon: Icon(Icons.person,color: Colors.pink,),
+                label:'Profile'
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person,color: Colors.pink,),
                 label:'Profile'
             )
         ],

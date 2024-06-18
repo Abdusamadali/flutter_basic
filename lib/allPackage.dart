@@ -9,3 +9,7 @@ export 'package:leancode/dropdown.dart';
 export 'formWidget.dart';
 export 'decorationImage.dart';
 export 'package:leancode/geolocator.dart';
+export 'package:leancode/InstaPages/add.dart';
+export 'package:leancode/InstaPages/home.dart';
+export 'package:leancode/InstaPages/likes.dart';
+export 'package:leancode/InstaPages/profile.dart';
