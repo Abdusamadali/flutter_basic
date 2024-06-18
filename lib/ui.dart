@@ -120,7 +120,7 @@ class _uiState extends State<ui> {
                         ),
                         Row(
                           children: [
-                            Text('82',
+                            Text('$chat',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 19
@@ -136,7 +136,7 @@ class _uiState extends State<ui> {
                         ),
                         Row(
                           children: [
-                            Text('295',
+                            Text('$smiley',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 19

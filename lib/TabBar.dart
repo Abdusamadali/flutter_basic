@@ -16,7 +16,6 @@ class tabBar extends StatelessWidget {
               indicatorColor: Colors.blue,
               dividerColor: Colors.red,
               labelColor: Colors.green[900],
-
               unselectedLabelColor: Colors.green,
               tabs: [
                 Tab(icon: Icon(Icons.camera_alt_outlined),

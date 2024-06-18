@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leancode/instagramUi.dart';
 import 'package:leancode/ui.dart';
 import 'allPackage.dart';
 
@@ -26,7 +27,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ui(),
+      home: instaui(),
     );
   }
 }
